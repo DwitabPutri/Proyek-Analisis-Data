@@ -5,10 +5,10 @@ import matplotlib.pyplot as plt
 
 st.title("Bike Sharing Data")
 
-daily_hours_df = pd.read_csv('daily_hours_df.csv')
-hours_df = pd.read_csv('hours_df.csv')
-day_type_hours_df = pd.read_csv('day_type_hours_df.csv')
-cust_type_df = pd.read_csv('cust_type_df.csv')
+daily_hours_df = pd.read_csv('dashboard/daily_hours_df.csv')
+hours_df = pd.read_csv('dashboard/hours_df.csv')
+day_type_hours_df = pd.read_csv('dashboard/day_type_hours_df.csv')
+cust_type_df = pd.read_csv('dashboard/cust_type_df.csv')
 
 hours_df['yr'] = hours_df['yr'].map({0: 2011, 1: 2012})
 daily_hours_df['dteday'] = pd.to_datetime(daily_hours_df['dteday'])
